@@ -11,6 +11,11 @@ High-level is defined as:
 * Established cluster
 * Outside/inside interfaces configured
 
+## Usage
+
+    $ cd bigpyp/bigpyp/
+    $ PASS=<password> python load_balancer.py
+
 ## Testing
 
     $ tox
