@@ -1,0 +1,20 @@
+---
+load_balancing:
+  auth:
+      dns: auth.example.com
+      ip: <public IP>
+      front_port: 443
+      back_port: 5000
+      monitor: http
+      members:
+      - 192.168.129.10
+      - 192.168.129.11
+  compute.api:
+      dns: compute.example.com
+      ip: <public IP>
+      front_port: 443
+      back_port: 8774
+      monitor: http
+      members:
+      - 192.168.129.12
+      - 192.168.129.13
